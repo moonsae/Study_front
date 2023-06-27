@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul, li{
+            padding: 0px;
+            margin: 0px;
+        }
+        ul{
+            list-style: none;
+        }
+        .menu_item ul{
+            display: none;
+        }
+        .menu_item:hover ul{
+            display: block;
+
+            width:100%;
+            padding: 10px;
+            background-color: coral;
+            color: white;
+            
+            position: fixed;
+            left:0px;
+            
+
+        }
+        .menu_wrap{
+            display: flex;
+        }
+        .menu_item{
+            width: 100px;
+            height:50px;
+            border: 1px solid black;
+            margin: 0px 30px;
+            
+            
+
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu_wrap">
+        <li class="menu_item">메뉴1
+            <ul>
+                <li>하위메뉴1</li>
+                <li>하위메뉴1</li>
+                <li>하위메뉴1</li>
+            </ul>
+        </li>
+        <li class="menu_item">메뉴2
+            <ul>
+                <li>하위메뉴2</li>
+                <li>하위메뉴2</li>
+                <li>하위메뉴2</li>
+            </ul>
+        </li>
+        <li class="menu_item">메뉴3
+            <ul>
+                <li>하위메뉴3</li>
+                <li>하위메뉴3</li>
+                <li>하위메뉴3</li>
+            </ul>
+        </li>
+
+    </ul>
+</body>
+</html>

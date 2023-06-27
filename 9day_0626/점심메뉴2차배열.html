@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //2차원 배열 1개 사용해서 점심메뉴 저장
+
+        let week2=[
+            ["돈까스","카레","우동","김밥","떡볶이","볶음밥","탕수육"],
+            ["피자","밀면","물냉면","햄버거","치킨","라면","덮밥"],
+            ["빵","짬뽕","짜장면","국수","칼국수","닭볶음탕","메밀소바"],
+            ["치킨까스","생선까스","가츠동","우육면","만두","비빔냉면","수육"]
+        ]
+            
+            
+        let week = parseInt(prompt("주 선택: ","1: 1주, 2: 2주...."));
+        let day = parseInt(prompt("요일 선택","0: 월, 1: 화, ..., 6: 일"));
+        let menu; // 메뉴저장
+        let day1; // 요일 저장
+
+        for(let i=0; i<4; i++){
+            for(let j=0; j<7; j++){
+                if(week2[i][j]==week2[week][day]){
+                    menu=week2[i][j];
+                    break;
+                }
+            }
+        }
+        switch(day)
+        {
+            case 0:
+                day1="월요일";
+                break;
+            case 1:
+                day1="화요일";
+                break;
+            case 2:
+                day1="수요일";
+                break;
+            case 3:
+                day1="목요일";
+                break;
+            case 4:
+                day1="금요일";
+                break;
+            case 0:
+                day1="토요일";
+                break;
+            case 0:
+                day1="일요일";
+                break;
+
+        }
+        alert((week+1) +"주차 "+day1+"의 메뉴는 "+menu+"입니다.")
+    </script>
+</body>
+</html>

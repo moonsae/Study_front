@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        while(true){
+            let user = parseInt(prompt("숫자로 입력하세요","0: 가위, 1: 바위, 2: 보"));
+            let computer = Math.floor(Math.random()*3);
+            alert("컴퓨터: "+ computer);
+            let result;
+            if(user==computer){
+                alert("무승부입니다.");      
+            }
+            else{
+                if(user==0){
+                    if(computer==1){
+                        result = "승리";
+                    }
+                    else{
+                        result = "패배";
+                    }
+                }
+                else if(user==1){
+                    if(computer==2){
+                        result = "승리";
+                    }
+                    else{
+                        result = "패배";
+                    }
+                } 
+                else if(user==2){
+                    if(computer==0){
+                        result = "승리";
+                    }
+                    else{
+                        result = "패배";
+                    }
+                }
+                alert("컴퓨터의 " + result+"입니다.");
+                break;
+            }
+        }
+        
+            
+    
+        
+    </script>
+</body>
+</html>

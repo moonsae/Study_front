@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let menu = prompt("메뉴를 선택하시오 ", "1: 등록, 2: 조회, 3: 변경");
+        // menu를 문자로 인식했음 0의 아스키코드는 48
+        // "1" 과 1 구분할 수 있어야 함
+        // 
+        let menuInt = parseInt(menu);
+        //alert(menuInt);
+
+        switch( menuInt){
+            case 1:
+                alert("등록합니다");
+                break;
+            case 2:
+                alert("조회합니다");
+                break;
+            case 3:
+                alert("변경합니다");
+                break;
+            default:
+                alert("잘못된 메뉴");
+
+        }
+    </script>
+</body>
+</html>

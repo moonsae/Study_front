@@ -49,6 +49,7 @@
 
 
 	<script>
+		// 이미지 클릭 시 변경
 		function imgChange(n){
 			let cup = document.getElementById("cup");
 			//alert(cup);
@@ -62,16 +63,20 @@
 				cup.src="imgs/coffee-gray.jpg";
 			}
 		}
+
+		//상세 설명 보기 버튼 클릭 시
 		let flag = true;
 		function detailInfo(){
 			let info = document.getElementById("detail");
-			
+			let view = document.getElementById("view");
 			if(flag == true){
 				info.style.display="block";
+				view.textContent="상세 설명 접기";
 				flag=false;
 			}
 			else{
 				info.style.display="none";
+				view.textContent="상세 설명 보기";
 				flag=true;
 			}
 		}

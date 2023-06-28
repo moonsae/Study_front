@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let phoneArry=[
+            {
+                name:"iPhone 14 Pro Max",
+                disp: "17.0cm",
+                g: "240g",
+                maxVideo: "29 hours",
+                storage: "128GB, 256GB, 512GB, 1TB",
+                manufac:"APPLE"
+
+            },{
+                name:"iPhone 14 Pro",
+                disp: "15.5cm",
+                g: "206g",
+                maxVideo:"23 hours",
+                storage: "128GB, 256GB, 512GB, 1TB",
+                manufac:"APPLE"
+            },{
+                name:"iPhone 14",
+                disp: "17.0cm",
+                g: "203g",
+                maxVideo:"26 hours",
+                storage: "128GB, 256GB, 512GB",
+                manufac:"APPLE"
+            },{
+                name:"갤럭시 S23 Ultra",
+                disp: "17.3cm",
+                g: "233g",
+                maxVideo:"26 hours",
+                storage: "128GB, 256GB, 512GB, 1TB",
+                manufac:"SAMSUNG"
+            },{
+                name:"갤럭시 S23+",
+                disp: "16.6cm",
+                g: "195g",
+                maxVideo:"27 hours",
+                storage: "256GB, 512GB",
+                manufac:"SAMSUNG"
+            },{
+                name:"갤럭시 S23",
+                disp: "15.3cm",
+                g: "168g",
+                maxVideo:"22 hours",
+                storage: "256GB, 512GB",
+                manufac:"SAMSUNG"
+            }
+        ]
+
+        function findPhoe('a'){
+            for(let i=0; i<6; i++){
+                if(phoneArry[i].manufac==a){
+                    document.write(phoneArry[i].name);
+                }
+            }
+
+        }
+        let manuf = prompt("제조사를 입력하세요");
+        findPhone('manuf');
+
+    </script>
+</body>
+</html>

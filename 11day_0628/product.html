@@ -13,9 +13,9 @@
 			<div id="prod-pic">
 				<img src="imgs/coffee-pink.jpg" alt="에디오피아 게뎁" id="cup" width="200" height="200">
 					<div id="small-pic">
-						<img src="imgs/coffee-pink.jpg" class="small">
-						<img src="imgs/coffee-blue.jpg" class="small">
-						<img src="imgs/coffee-gray.jpg" class="small">
+						<img src="imgs/coffee-pink.jpg" class="small" onclick="imgChange(1)">
+						<img src="imgs/coffee-blue.jpg" class="small" onclick="imgChange(2)">
+						<img src="imgs/coffee-gray.jpg" class="small" onclick="imgChange(3)">
 					</div>
 			</div>			
 			<div id="desc">
@@ -27,7 +27,7 @@
 					<li>로스팅 : 2019.06.17</li>
 					<button>장바구니 담기</button>
 				</ul>				
-				<a href="#" id="view">상세 설명 보기</a>				
+				<a href="#" id="view" onclick="detailInfo()">상세 설명 보기</a>				
 			</div>
 			<hr>
 			<div id="detail">									
@@ -47,6 +47,35 @@
 			</div>
 	</div>
 
-	<script src="js/product.js"></script>
+
+	<script>
+		function imgChange(n){
+			let cup = document.getElementById("cup");
+			//alert(cup);
+			if(n==1){
+				cup.src="imgs/coffee-pink.jpg";
+			}
+			else if(n==2){
+				cup.src="imgs/coffee-blue.jpg";
+			}
+			else if(n==3){
+				cup.src="imgs/coffee-gray.jpg"
+			}
+		}
+		let flag = true;
+		function detailInfo(){
+			let info = document.getElementById("detail");
+			
+			if(flag == true){
+				info.style.display="block";
+				flag=false;
+			}
+			else{
+				info.style.display="none";
+				flag=true;
+			}
+		}
+	</script>
+	
 </body>
 </html>

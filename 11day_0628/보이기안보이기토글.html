@@ -19,17 +19,20 @@
     </div>
 
     <script>
-        //전역변수
-        let flag=true; //true, false 
+        //전역변수 //flag라는 변수사용하겠다 => 보이기/감추기 정보를 저장할 변수
+        let flag=true; //true: 보이기, false: 안보이기
+        // 스위치 변수, flag변수 
         function toggle(){
             let contentE = document.getElementById("content");
             if(flag==true){
                 //alert(contentE);
                 contentE.style.display="block";
+                // flag 변수값을 변화시켜야 함
                 flag=false;
             }
             else{
                 contentE.style.display="none";
+                // flag 변수값을 변화시켜야 함
                 flag=true;
             }
         }

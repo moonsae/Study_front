@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+       function f1(){
+            alert("f1");
+       }
+       function f2(){
+            alert("f2");
+       }
+       function main(f){
+            alert("시작======");
+            f();
+            alert("끝=======")
+       }
+       main(f1);
+       main(f2);
+       setTimeout(main(f1),1000);
+    </script>
+</body>
+</html>

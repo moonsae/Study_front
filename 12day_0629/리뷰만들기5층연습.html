@@ -16,11 +16,51 @@
             height: 100px;
             margin: 0 auto;
         }
+        .head_txt{
+            text-align: center;
+            margin-top: 30px;
+            font-size: 30px;
+            font-weight: bold;
+            
+        }
         .in_wrap2{
             width: 90%;
             border: 1px solid black;
             height: 300px;
             margin: 0 auto;
+            display: flex;
+            text-align: center;
+        }
+        .rv-img{
+            width: 50%;
+            border: 1px solid black;
+            height: 300px;
+
+        }
+        .rv-img img{
+            width: 350px;
+            height: 200px;
+            margin: 0 auto;
+
+        }
+        .img-txt{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .review{
+            width: 50%;
+            border: 1px solid black;
+            height: 300px;
+
+            
+        }
+        .rv-txt{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .txt-area{
+            width: 80%;
+            height: 190px;
         }
         .in_wrap3{
             width: 90%;
@@ -45,11 +85,26 @@
 <body>
     <div class="wrap">
         <!--리뷰 디테일-->
-        <div class="in_wrap1"></div>
+        <div class="in_wrap1">
+            <p class="head_txt">REVIEW DETAIL</p>
+        </div>
         <!--이미지와 맛평가-->
-        <div class="in_wrap2"></div>
+        <div class="in_wrap2">
+            <!--이미지-->
+            <div class="rv-img">
+                <h4 class="img-txt">이미지</h4>
+                <img src="https://mimg.segye.com/content/image/2021/01/07/20210107516500.jpg" >
+            </div>
+            <!--맛평가-->
+            <div class="review">
+                <h4 class="rv-txt">맛평가 (후기)</h4>
+                <textarea class="txt-area"></textarea>
+            </div>
+        </div>
         <!--연령대, 만족도, 성별-->
-        <div class="in_wrap3"></div>
+        <div class="in_wrap3">
+            <div 
+        </div>
         <!--판매점 정보-->
         <div class="in_wrap4"></div>
         <!--더 나누고 싶은 정보-->

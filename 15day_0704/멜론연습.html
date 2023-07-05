@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap_id">
+        <a href="https://www.melon.com">
+            <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20230703040214324.jpg">
+            <p>19</p>
+            <p>다이나믹 듀오</p>
+        </a>
+        
+        <a href="https://www.melon.com/tv/index.htm">
+            <p >멜론TV</p>
+        </a>
+    </div>
+    <button onclick="change_wrap()">변경하기</button>
+    <script>
+        let flag = 1;
+        function change_wrap(){
+            let result = document.getElementById("wrap_id");
+            result_img =result.firstElementChild.firstElementChild;
+            result_first=result.firstElementChild;
+            //alert(result_img);
+
+
+            let img1 ="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20230630063941461.jpg";
+            let singer1="SHINee (샤이니)";
+            let link1="https://www.google.com/";
+            let title1 = "HARD";
+
+
+
+            
+            let img2 ="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20230630063941461.jpg";
+            let singer2="SHINee (샤이니)";
+            let link2="https://www.google.com/";
+            let title2 = "HARD";
+            
+
+            if(flag==1){
+                result_first.href="https://www.google.com/"
+                result_img.src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20230630063941461.jpg";
+                 //alert(result.lastElementChild.firstElementChild)
+                result_p_title=result_img.nextElementSibling;
+                //alert(result_p_title);
+                result_p_title.innerHTML="HARD"
+                result_p_singer=result_p_title.nextElementSibling;
+                //alert(result_p_singer);
+                result_p_singer.innerHTML="SHINee (샤이니)"
+
+                //alert(result.lastElementChild);
+                result_link = result.lastElementChild;
+                result_link.href ="https://www.naver.com";
+                //alert(result_link);
+                result_addr = result.lastElementChild.firstElementChild;
+                result_addr.innerHTML="네이버";
+                //alert(result_addr)
+                flag=0;
+            }
+            else{
+
+                result_first.href="https://www.melon.com"
+                result_img.src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20230703040214324.jpg";
+                 //alert(result.lastElementChild.firstElementChild)
+                result_p_title=result_img.nextElementSibling;
+                //alert(result_p_title);
+                result_p_title.innerHTML="19"
+                result_p_singer=result_p_title.nextElementSibling;
+                //alert(result_p_singer);
+                result_p_singer.innerHTML="다이나믹 듀오"
+
+                //alert(result.lastElementChild);
+                result_link = result.lastElementChild;
+                result_link.href ="https://www.melon.com/tv/index.htm";
+                //alert(result_link);
+                result_addr = result.lastElementChild.firstElementChild;
+                result_addr.innerHTML="멜론TV";
+                //alert(result_addr)
+                flag=1;
+            }
+
+       
+
+        }
+    </script>
+</body>
+
+</html>

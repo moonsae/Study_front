@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .NJ_wrap{
+            border: 1px solid black;
+            width: 1008px;
+            display: flex;
+
+        }
+        .NJ_music_title{
+            /*인기있어요--음악 제목*/
+            font-weight: bolder;
+            width: 223px;
+            height: 16px;
+        }
+        .NJ_music_artist{
+            /*인기있어요--가수 이름*/
+            color: blueviolet;
+            width: 223px;
+            height: 16px; 
+        }
+        .NJ_tv_txt{
+            /*인기있어요 멜론티비*/
+            color: greenyellow;
+            width: 223px;
+            height: 16px;
+        }
+        .NJ_info{
+            /*인기있어요 정보들*/
+         
+            display:flex;
+            flex-wrap: wrap;
+            width: 704px;
+            padding: 0px;
+       
+        }
+        .NJ_Artists_img{
+            width: 223px;
+            height: 148px;
+        }
+        .NJ_artist_wrap{
+            width: 223px;
+            margin-left: 16px;
+            margin-top: 16px;
+          
+        }
+        .NJ_artist_wrap_left{
+            margin-top: 16px;
+        }
+        .NJ_wrap1{
+            border: 1px solid black;
+            width: 704px;
+            height: 472px;
+            margin-top: 32px;
+            margin-bottom: 49px;
+        }
+        .NJ_txt_title{
+            font-size: 15px;
+        }
+        .NJ_txt_ats{
+            font-size: 12px;
+            font-weight: 50;
+        }
+       
+        .NJ_chart_wrap{
+            width: 280px;
+            height: 472px;
+            border: 1px solid black;
+            margin-top: 32px;
+            margin-left: 24px;
+        }
+        .NJ_info_header{
+            display: flex;
+            width: 704px;
+            height: 25px;
+        }
+        .NJ_info_btn{
+            
+            border: 1px solid black;
+        }
+        .NJ_item{
+            width: 223px;
+            height: 204px;
+        }
+        .NJ_item p{
+            width: 223px;
+            height: 17px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <!--C 파트-->
+    <div class="NJ_wrap">
+        <!--인기있어요-->
+        <div class="NJ_wrap1">
+            <div class="NJ_info_header">
+            <h2 class="NJ_txt_title">인기 있어요
+                <span class="NJ_txt_ats"> 지금 이슈가 되는 아티스트의 인기 컨텐츠입니다. </span>
+            </h2>
+            <div class="NJ_info_btn"> 
+                <span class="NJ_txt_ats"><strong>1</strong></span><span class="NJ_txt_ats">/2</span>
+                <button onclick="change_wrap()"> <span> < </span> </button>
+                <button onclick="change_wrap2()"> <span> > </span> </button>
+            </div>
+        </div>
+        
+     
+        <div class="NJ_info">
+              
+                <div class="NJ_item">
+                    <a href="https://www.melon.com/video/detail2.htm?mvId=50262530&menuId=10010101">
+                               <img class="NJ_Artists_img" src="https://cdnimg.melon.co.kr/cm2/mv/images/wide/502/62/530/50262530_20230623105709_640.jpg/melon/resize/480/quality/80/optimize">
+                               <p class="NJ_music_title">19<br>
+                                   <span class="NJ_music_artist">다이나믹 듀오</span>
+                               </p>
+                           </a>
+                           <a href="https://www.melon.com/tv/index.htm">
+                               <p class="NJ_tv_txt">멜론TV</p>
+                       
+                           </a>
+                </div>
+                <div class="NJ_item">
+                    <a href="https://www.melon.com/video/detail2.htm?mvId=50262599&menuId=10010101">
+                        <img class="NJ_Artists_img" src="https://cdnimg.melon.co.kr/cm2/mv/images/wide/502/62/599/50262599_20230626174710_640.jpg/melon/resize/480/quality/80/optimize">
+                        <p class="NJ_music_title">HARD<br>
+                            <span class="NJ_music_artist">SHINee (샤이니)</span>
+                        </p>
+                    </a>
+                    <a href="https://www.melon.com/tv/index.htm">
+                        <p class="NJ_tv_txt">멜론TV</p>
+                    </a>
+                
+                </div>
+                <div class="NJ_item">
+                    <a href="https://www.melon.com/video/detail2.htm?mvId=50262632&menuId=10010101">
+                        <img class="NJ_Artists_img" src="https://cdnimg.melon.co.kr/cm2/mv/images/wide/502/62/632/50262632_20230630151854_640.jpg/melon/resize/480/quality/80/optimize">
+                        <p class="NJ_music_title">Hate Rodrigo (Feat. 우기 ((여자)아이들))<br>
+                            <span class="NJ_music_artist">YENA (최예나)</span>
+                        </p>
+                    </a>
+                    <a href="https://www.melon.com/tv/index.htm">
+                        <p class="NJ_tv_txt">멜론TV</p>
+                    </a>
+                
+                </div>
+                <div class="NJ_item">
+                    <a href="https://www.melon.com/video/detail2.htm?mvId=50262586&menuId=10010101">
+                        <img class="NJ_Artists_img" src="https://cdnimg.melon.co.kr/cm2/mv/images/wide/502/62/658/50262658_20230628181036_640.jpg/melon/resize/480/quality/80/optimize">
+                        <p class="NJ_music_title">MOVIE (T5)<br>
+                            <span class="NJ_music_artist">TREASURE (트레저)</span>
+                        </p>
+                    </a>
+                    <a href="https://www.melon.com/tv/index.htm">
+                        <p class="NJ_tv_txt">멜론TV</p>
+                    </a>
+                
+                </div>
+                <div class="NJ_item">
+                    <a href="https://www.melon.com/video/detail2.htm?mvId=50262586&menuId=10010101">
+                        <img class="NJ_Artists_img" src="https://cdnimg.melon.co.kr/cm2/mv/images/wide/502/62/586/50262586_20230626151601_640.jpg/melon/resize/480/quality/80/optimize">
+                        <p class="NJ_music_title">Dive Into<br>
+                            <span class="NJ_music_artist">한승우</span>
+                        </p>
+                    </a>
+                    <a href="https://www.melon.com/tv/index.htm">
+                        <p class="NJ_tv_txt">멜론TV</p>
+                    </a>
+                
+                </div>
+                <div class="NJ_item">
+                    <a href="https://www.melon.com/video/detail2.htm?mvId=50262586&menuId=10010101">
+                        <img class="NJ_Artists_img" src="https://cdnimg.melon.co.kr/cm2/mv/images/wide/502/62/797/50262797_20230703164714_640.jpg/melon/resize/480/quality/80/optimize">
+                        <p class="NJ_music_title">Roller Coaster<br>
+                            <span class="NJ_music_artist">NMIXX</span>
+                        </p>
+                    </a>
+                    <a href="https://www.melon.com/tv/index.htm">
+                        <p class="NJ_tv_txt">멜론TV</p>
+                
+                </div>
+            </div>
+
+       
+
+
+        </div>
+        <!--멜론차트-->
+        <div class="NJ_chart_wrap">
+
+        </div>
+    </div>
+    <script>
+        function change_wrap(){
+            let item_content= [{ 
+              img1 : "https://cdnimg.melon.co.kr/cm2/mv/images/wide/502/62/530/50262530_20230623105709_640.jpg/melon/resize/480/quality/80/optimize",
+              singer1: "다이나믹 듀오",
+              link1: "https://www.melon.com/video/detail2.htm?mvId=50262530&menuId=10010101",
+              title1 : "19",
+              mel_link1 : "https://www.naver.com",
+              mel_title1 : "멜론TV"
+            },{
+              img1 : "https://cdnimg.melon.co.kr/cm2/mv/images/wide/502/62/599/50262599_20230626174710_640.jpg/melon/resize/480/quality/80/optimize",
+              singer1: "SHINee (샤이니)",
+              link1: "https://www.melon.com/video/detail2.htm?mvId=50262530&menuId=10010101",
+              title1 : "HARD",
+              mel_link1 : "https://www.melon.com/tv/index.htm",
+              mel_title1 : "멜론TV"
+            },{
+              img1 : "https://cdnimg.melon.co.kr/cm2/mv/images/wide/502/62/632/50262632_20230630151854_640.jpg/melon/resize/480/quality/80/optimize",
+              singer1: "YENA (최예나)",
+              link1: "https://www.melon.com/video/detail2.htm?mvId=50262632&menuId=10010101",
+              title1 : "Hate Rodrigo (Feat. 우기 ((여자)아이들))",
+              mel_link1 : "https://www.melon.com/tv/index.htm",
+              mel_title1 : "멜론TV"
+            },{
+              img1 : "https://cdnimg.melon.co.kr/cm2/mv/images/wide/502/62/658/50262658_20230628181036_640.jpg/melon/resize/480/quality/80/optimize",
+              singer1: "TREASURE (트레저)",
+              link1: "https://www.melon.com/video/detail2.htm?mvId=50262586&menuId=10010101",
+              title1 : "MOVIE",
+              mel_link1 : "https://www.melon.com/tv/index.htm",
+              mel_title1 : "멜론TV"
+            },{
+              img1 : "https://cdnimg.melon.co.kr/cm2/mv/images/wide/502/62/586/50262586_20230626151601_640.jpg/melon/resize/480/quality/80/optimize",
+              singer1: "한승우",
+              link1: "https://www.melon.com/video/detail2.htm?mvId=50262586&menuId=10010101",
+              title1 : "Dive Into",
+              mel_link1 : "https://www.melon.com/tv/index.htm",
+              mel_title1 : "멜론TV"
+            },{
+              img1 : "https://cdnimg.melon.co.kr/cm2/mv/images/wide/502/62/797/50262797_20230703164714_640.jpg/melon/resize/480/quality/80/optimize",
+              singer1: "NMIXX",
+              link1: "https://www.melon.com/video/detail2.htm?mvId=50262586&menuId=10010101",
+              title1 : "Roller Coaster",
+              mel_link1 : "https://www.melon.com/tv/index.htm",
+              mel_title1 : "멜론TV"
+            }];
+            
+
+            let items= document.querySelectorAll(".NJ_item");
+            let item;
+
+            for(let i=0; i<6; i++){
+                item=items[i];
+                let str="<a href='" + item_content[i].link1 + "'>" +
+                "<img src='" + item_content[i].img1 + "'width=223px; height=148px>" +
+                "<p>" + item_content[i].title1 + "</p>" +
+                "<p>" + item_content[i].singer1 + "</p></a>" +
+                "<a href='"+item_content[i].mel_link1+"'><p>" + item_content[i].mel_title1 + "</p></a>";
+
+                item.innerHTML=str;
+
+            }
+        }
+        function change_wrap2(){
+            let item_content= [{ 
+              img1 : "https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20230703033429060.png",
+              event1: "매거진 이벤트",
+              link1: "https://www.melon.com/musicstory/inform.htm?mstorySeq=13916",
+              title1 : "히사이시 조의 새로운 도전, 교향악으로 만나는 '지브리 사운드'",
+              mel_link1 : "https://www.melon.com/musicstory/today/index.htm",
+              mel_title1 : "멜론매거진"
+            },{
+              img1 : "https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20230703040214324.jpg",
+              event1: "비하인드 컷",
+              link1: "https://www.melon.com/musicstory/inform.htm?mstorySeq=13917",
+              title1 : "'나와 내 이웃에게' 보내는 허회경의 다정한 위로",
+              mel_link1 : "https://www.melon.com/musicstory/today/index.htm",
+              mel_title1 : "멜론매거진"
+            },{
+              img1 : "https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20230628053257521.jpg",
+              event1: "트렌드 클리핑",
+              link1: "https://www.melon.com/musicstory/inform.htm?mstorySeq=13915",
+              title1 : "'BUSINESS IS BUSINESS.' Young Thug & Gunna",
+              mel_link1 : "https://www.melon.com/musicstory/today/index.htm",
+              mel_title1 : "멜론매거진"
+            },{
+              img1 : "https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20230630102434753.jpg",
+              event1: "트렌드 클리핑",
+              link1: "https://www.melon.com/musicstory/inform.htm?mstorySeq=13920",
+              title1 : "9월, god가 돌아온다.",
+              mel_link1 : "https://www.melon.com/musicstory/today/index.htm",
+              mel_title1 : "멜론매거진"
+            },{
+              img1 : "https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20230704025218219.jpg",
+              event1: "비하인드 컷",
+              link1: "https://www.melon.com/musicstory/inform.htm?mstorySeq=13929",
+              title1 : "계절의 향과 질감을 그려내는 전진희의 정규 3집, [아무도 모르게]",
+              mel_link1 : "https://www.melon.com/musicstory/today/index.htm",
+              mel_title1 : "멜론매거진"
+            },{
+              img1 : "https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20230704011455400.jpg",
+              event1: "메거진 이벤트",
+              link1: "https://www.melon.com/musicstory/inform.htm?mstorySeq=13922",
+              title1 : "'엔젤'에게 전달하는 틴탑만의 확실한 약속 [4SHO]",
+              mel_link1 : "https://www.melon.com/musicstory/today/index.htm",
+              mel_title1 : "멜론매거진"
+            }];
+            
+
+            let items= document.querySelectorAll(".NJ_item");
+            let item;
+
+            for(let i=0; i<6; i++){
+                item=items[i];
+                let str="<a href='" + item_content[i].link1 + "'>" +
+                "<img src='" + item_content[i].img1 + "'width=223px; height=148px;>" +
+                "<p>" + item_content[i].title1 + "</p>" +
+                "<p>" + item_content[i].event1 + "</p></a>" +
+                "<a href='"+item_content[i].mel_link1+"'><p>" + item_content[i].mel_title1 + "<width=223px; height=14px;/p></a>";
+
+                item.innerHTML=str;
+
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -140,6 +140,10 @@
             right: 3px;
             bottom: 17px;
         }
+        .NJ_chart_time p{
+            position: absolute;
+            right: 3px;
+        }
         .NJ_chart_chart a {
            text-decoration: none;
            color: black;
@@ -320,7 +324,7 @@
                 <div class="NJ_chart_chart">
                     <a href="https://www.melon.com/chart/index.htm">멜론 차트> </a>
                 </div>
-                <div class="NJ_chart_time">
+                <div class="NJ_chart_time" id="NJ_time">
                     <p>2023.07.06 <strong>09:00</strong>기준</p>
                 </div>
             </div>
@@ -537,52 +541,52 @@
         function changeTop100(){
             let top_list=[{
                 rank:"1",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 title:"퀸카 (Queencard)",
                 singer: "(여자)아이들"
             },{
                 rank:"2",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 title:"I AM",
                 singer: "IVE (아이브)"
             },{
                 rank:"3",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 title:"이브,프시케 그리고 푸른 수염의 아내",
                 singer: "LE SSERAFIM(르세라핌)"
             },{
                 rank:"4",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 title:"Spicy",
                 singer: "aespa"
             },{
                 rank:"5",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 title:"UNFORGIVEN(feat. Nile Rodgers)",
                 singer: "LE SSERAFIM(르세라핌)"
             },{
                 rank:"6",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 title:"헤어지자 말해요",
                 singer: "박재정"
             },{
                 rank:"7",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 title:"Kitsch",
                 singer: "IVE (아이브)"
             },{
                 rank:"8",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 title:"사랑은 늘 도망가",
                 singer: "임영웅"
             },{
                 rank:"9",
-                upanddown: "▲2",
+                upanddown: " ▲2",
                 title:"Hype boy",
                 singer: "NewJeans"
             },{
                 rank:"10",
-                upanddown: "▼1",
+                upanddown: " ▼1",
                 title:"모래 알갱이",
                 singer: "임영웅"
             },];
@@ -607,58 +611,60 @@
             let btn_ats =document.getElementById("NJ_btn_ats");
             btn_ats.style.color='#666';
             btn_ats.style.borderTopColor='#666'; 
+            let top_time=document.getElementById("NJ_time");
+            top_time.innerHTML="<p>2023.07.06 <strong>09:00</strong>기준</p>";
          
         }
         //POP
         function changePop(){
             let pop_list=[{
                 rank:"1",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 title:"I Don't Think I Like Her",
                 singer: "Charlie Puth"
             },{
                 rank:"2",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 title:"Dangerously",
                 singer: "Charlie Puth"
             },{
                 rank:"3",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 title:"NIGHT DANCER",
                 singer: "imase"
             },{
                 rank:"4",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 title:"Steal The Show (From '엘리멘탈')",
                 singer: "Lauv"
             },{
                 rank:"5",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 title:"That's Hilarious",
                 singer: "Charlie Puth"
             },{
                 rank:"6",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 title:"STAY",
                 singer: "The Kid LAROI"
             },{
                 rank:"7",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 title:"That's Not How This Works (feat. Dan + Shay)",
                 singer: "Charlie Puth)"
             },{
                 rank:"8",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 title:"Dreamers [Music from the FIFA World Cup Qatar 2022 Official Soundtrack] (Feat. FIFA Sound)",
                 singer: "정국, 방탄소년단"
             },{
                 rank:"9",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 title:"Anglt Pt. 1 (Feat. Kodak Black, NLE Choppa, JVKE, Muni Long)",
                 singer: "Fast & Furious: The Fast Saga"
             },{
                 rank:"10",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 title:"Off My Face",
                 singer: "Justin Bieber"
             },];
@@ -684,48 +690,50 @@
             let btn_ats =document.getElementById("NJ_btn_ats");
             btn_ats.style.color='#666';
             btn_ats.style.borderTopColor='#666'; 
+            let pop_time=document.getElementById("NJ_time");
+            pop_time.innerHTML="<p>2023.07.04 기준</p>";
         }
         //아티스트
         function changeArtist(){
             let artist_list=[{
                 rank:"1",
-                upanddown: "▲3",
+                upanddown: " ▲3",
                 name: "빈지노 (Beenzino)"
             },{
                 rank:"2",
-                upanddown: "▲1",
+                upanddown: " ▲1",
                 name: "방탄소년단"
             },{
                 rank:"3",
-                upanddown: "▼1",
+                upanddown: " ▼1",
                 name: "임영웅"
             },{
                 rank:"4",
-                upanddown: "▼3",
+                upanddown: " ▼3",
                 name: "정국"
             },{
                 rank:"5",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 name: "IVE (아이브)"
             },{
                 rank:"6",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 name: "(여자)아이들"
             },{
                 rank:"7",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 name: "LE SSERAFIM (르세라핌)"
             },{
                 rank:"8",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 name: "세븐틴 (SEVENTEEN)"
             },{
                 rank:"9",
-                upanddown: "- 0",
+                upanddown: " - 0",
                 name: "NewJeans"
             },{
                 rank:"10",
-                upanddown: "▲1",
+                upanddown: " ▲1",
                 name: "아이유"
             },]
             let ats_items= document.querySelectorAll(".NJ_chart_list");
@@ -749,6 +757,8 @@
             let btn_ats =document.getElementById("NJ_btn_ats");
             btn_ats.style.color='#7cb710';
             btn_ats.style.borderTopColor='#7cb710'; 
+            let ats_time=document.getElementById("NJ_time");
+            ats_time.innerHTML="<p>2023.07.04 기준</p>";
         }
 
        

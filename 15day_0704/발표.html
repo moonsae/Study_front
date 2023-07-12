@@ -25,12 +25,15 @@
         }
         .wrap2{
             width: 800px;
-            height: 1000px;
+            height: 1200px;
             border: 1px solid black;
             text-align: center;
             background-color: rgb(206, 177, 233);
         }
         #hint{
+            display: none;
+        }
+        #answer{
             display: none;
         }
     </style>
@@ -42,18 +45,31 @@
         function click_Qz(){
                 window.scrollTo({top:200, behavior:'smooth'});
         }
-        let flag = 1;
+        let hint_flag = 1;
         function hint_btn(){
             let result = document.getElementById("hint");
-            if(flag==1){
+            if(hint_flag==1){
                 result.style.display='block';
-                flag=0;
+                hint_flag=0;
             }
             else{
                 result.style.display='none';
-                flag=1;
+                hint_flag=1;
             }
-        }      
+        } 
+        let answer_flag = 1;
+        function answer_btn() {
+            let result = document.getElementById("answer");
+            if(answer_flag==1){
+                result.style.display='block';
+                answer_flag=0;
+            }
+            else{
+                result.style.display='none';
+                answer_flag=1;
+            }
+
+        }  
     
     </script>
 </head>
@@ -68,7 +84,7 @@
         height: 200px;
         </div>
     </header>
-    <div class="wrap1">🎈문제(이동해보기)🎈<br>
+    <div class="wrap1">🎈🎈🎈문제(이동해보기)🎈🎈🎈<br>
         <br>
         <br>
         <br>
@@ -79,31 +95,31 @@
     </div>
     <div class="wrap2">
         width: 800px;
-        height: 1000px;<br>
+        height: 1200px;<br>
         ================================<br>
         가장 쉬운 방법은 a태그이다. <br>
         한 번에 이동한다.<br>
-        a href="#"<br><br>
+        <strong>href="#"</strong><br><br>
         <button><a href="#">맨위로</a></button><br>
         ================================<br>
         <br>
         <br>
         <br>
         -------------------------------------------------------<br>
-        자바스크립트1<br>
+        <strong>자바스크립트1</strong><br>
         위와 마찬가지로 한 번에 이동한다.<br>
         Window.scrollTo()이란? -> 문서의 지정된 위치로 스크롤한다.<br>
         Window.scrollTo(x좌표, y좌표)<br>
-        onClick="javascript:window.scrollTo(0,0)"<br><br>
+        <strong>window.scrollTo(0,0)</strong><br><br>
         <input type="button" value="맨위로" onClick="javascript:window.scrollTo(0,0)"><br>
         -------------------------------------------------------<br>
         <br>
         <br>
         <br>
         -------------------------------------------------------<br>
-        자바스크립트2<br>
+        <strong>자바스크립트2</strong><br>
         부드럽게 스크롤이 이동한다.<br>
-        Window.scrollTo()에서 behavior:smoote 속성을 사용<br>
+        Window.scrollTo()에서 <strong>behavior:smooth</strong> 속성을 사용<br>
         <!--({top:0, behavior:'smooth'})<br>--><br>
         <input type="button" value="맨위로" onclick="click_btn()" ><br>
         -------------------------------------------------------<br>
@@ -115,12 +131,19 @@
         <strong>Qz.1</strong><br>
         '문제(이동해보기)'로 이동해보기<br>
         <input type="button" value="문제" onclick="click_Qz()" ><br><br>
+        window.scrollTo({ ?<b>:</b>?,behavior: '?'});<br>
         ================================<br>
         <button onclick="hint_btn()">힌트</button><br>
         <div id="hint">
             button onClick="click_btn()"<br>
             function click_btn(){
                 window.scrollTo({top:0, behavior:'smooth'});}
+        </div>
+        ================================<br>
+        <button onclick="answer_btn()">정답</button><br>
+        <div id="answer">
+            <strong> window.scrollTo({top:200, behavior:'smooth'});</strong><br>
+    
         </div>
  
 

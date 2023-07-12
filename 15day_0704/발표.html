@@ -5,23 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .header{
+        .title{
             width: 800px;
             height: 200px;
             border: 1px solid black;
             text-align: center;
+            background-color: rgb(252, 244, 232);
+        }
+        .title a{
+            text-decoration: none !important;
+            color: black;
         }
         .wrap1{
             width: 800px;
             height: 700px;
             border: 1px solid black;
             text-align: center;
+            background-color: rgb(182, 218, 206);
         }
         .wrap2{
             width: 800px;
-            height: 700px;
+            height: 1000px;
             border: 1px solid black;
             text-align: center;
+            background-color: rgb(206, 177, 233);
+        }
+        #hint{
+            display: none;
         }
     </style>
     <script>
@@ -29,20 +39,52 @@
         function click_btn(){
                 window.scrollTo({top:0, behavior:'smooth'});
         }
+        function click_Qz(){
+                window.scrollTo({top:200, behavior:'smooth'});
+        }
+        let flag = 1;
+        function hint_btn(){
+            let result = document.getElementById("hint");
+            if(flag==1){
+                result.style.display='block';
+                flag=0;
+            }
+            else{
+                result.style.display='none';
+                flag=1;
+            }
+        }      
     
     </script>
 </head>
 <body>
     <header>
-        <div class="header">TOP 버튼</div>
+        <div class="title">TOP 버튼<br>
+        <br>문제(이동해보기)
+        <br>
+        <br>
+        <br>
+        width: 800px;
+        height: 200px;
+        </div>
     </header>
-    <div class="wrap1">가나다라마바</div>
+    <div class="wrap1">🎈문제(이동해보기)🎈<br>
+        <br>
+        <br>
+        <br>
+        <br>
+        width: 800px;
+        height: 700px;
+
+    </div>
     <div class="wrap2">
+        width: 800px;
+        height: 1000px;<br>
         ================================<br>
         가장 쉬운 방법은 a태그이다. <br>
         한 번에 이동한다.<br>
-        a href="#"<br> 
-        <button><a href="#">맨 위로</a></button><br>
+        a href="#"<br><br>
+        <button><a href="#">맨위로</a></button><br>
         ================================<br>
         <br>
         <br>
@@ -52,7 +94,7 @@
         위와 마찬가지로 한 번에 이동한다.<br>
         Window.scrollTo()이란? -> 문서의 지정된 위치로 스크롤한다.<br>
         Window.scrollTo(x좌표, y좌표)<br>
-        onClick="javascript:window.scrollTo(0,0)"<br>
+        onClick="javascript:window.scrollTo(0,0)"<br><br>
         <input type="button" value="맨위로" onClick="javascript:window.scrollTo(0,0)"><br>
         -------------------------------------------------------<br>
         <br>
@@ -62,9 +104,26 @@
         자바스크립트2<br>
         부드럽게 스크롤이 이동한다.<br>
         Window.scrollTo()에서 behavior:smoote 속성을 사용<br>
-        ({top:0, behavior:'smooth'})<br>
+        <!--({top:0, behavior:'smooth'})<br>--><br>
         <input type="button" value="맨위로" onclick="click_btn()" ><br>
         -------------------------------------------------------<br>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <strong>Qz.1</strong><br>
+        '문제(이동해보기)'로 이동해보기<br>
+        <input type="button" value="문제" onclick="click_Qz()" ><br><br>
+        ================================<br>
+        <button onclick="hint_btn()">힌트</button><br>
+        <div id="hint">
+            button onClick="click_btn()"<br>
+            function click_btn(){
+                window.scrollTo({top:0, behavior:'smooth'});}
+        </div>
+ 
+
         
     </div>
    

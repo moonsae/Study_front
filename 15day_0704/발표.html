@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            width: 800px;
+            height: 200px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .wrap1{
+            width: 800px;
+            height: 700px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .wrap2{
+            width: 800px;
+            height: 700px;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+    <script>
+   
+        function click_btn(){
+                window.scrollTo({top:0, behavior:'smooth'});
+        }
+    
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header">TOP 버튼</div>
+    </header>
+    <div class="wrap1">가나다라마바</div>
+    <div class="wrap2">
+        ================================<br>
+        가장 쉬운 방법은 a태그이다. <br>
+        한 번에 이동한다.<br>
+        a href="#"<br> 
+        <button><a href="#">맨 위로</a></button><br>
+        ================================<br>
+        <br>
+        <br>
+        <br>
+        -------------------------------------------------------<br>
+        자바스크립트1<br>
+        위와 마찬가지로 한 번에 이동한다.<br>
+        Window.scrollTo()이란? -> 문서의 지정된 위치로 스크롤한다.<br>
+        Window.scrollTo(x좌표, y좌표)<br>
+        onClick="javascript:window.scrollTo(0,0)"<br>
+        <input type="button" value="맨위로" onClick="javascript:window.scrollTo(0,0)"><br>
+        -------------------------------------------------------<br>
+        <br>
+        <br>
+        <br>
+        -------------------------------------------------------<br>
+        자바스크립트2<br>
+        부드럽게 스크롤이 이동한다.<br>
+        Window.scrollTo()에서 behavior:smoote 속성을 사용<br>
+        ({top:0, behavior:'smooth'})<br>
+        <input type="button" value="맨위로" onclick="click_btn()" ><br>
+        -------------------------------------------------------<br>
+        
+    </div>
+   
+</body>
+</html>

@@ -12,10 +12,6 @@
             text-align: center;
             background-color: rgb(252, 244, 232);
         }
-        .title a{
-            text-decoration: none !important;
-            color: black;
-        }
         .wrap1{
             width: 800px;
             height: 700px;
@@ -25,7 +21,7 @@
         }
         .wrap2{
             width: 800px;
-            height: 1200px;
+            height: 1500px;
             border: 1px solid black;
             text-align: center;
             background-color: rgb(206, 177, 233);
@@ -36,6 +32,7 @@
         #answer{
             display: none;
         }
+       
     </style>
     <script>
    
@@ -75,32 +72,51 @@
 </head>
 <body>
     <header>
-        <div class="title">TOP 버튼<br>
+        <div class="title" id="header">TOP 버튼<br>
         <br>
         <br>
         <br>
         <br>
+        id="header"
         width: 800px;
         height: 200px;
         </div>
     </header>
-    <div class="wrap1">🎈🎈🎈문제(이동해보기)🎈🎈🎈<br>
+    <div class="wrap1" id="second">🎈🎈🎈문제(이동해보기)🎈🎈🎈<br>
         <br>
         <br>
         <br>
         <br>
+        id="second"
         width: 800px;
         height: 700px;
 
     </div>
     <div class="wrap2">
         width: 800px;
-        height: 1200px;<br>
+        height: 1500px;<br><br><br><br>
         ================================<br>
         가장 쉬운 방법은 a태그이다. <br>
         한 번에 이동한다.<br>
         <strong>href="#"</strong><br><br>
         <button><a href="#">맨위로</a></button><br>
+        ================================<br>
+        <br>
+        <br>
+        <br>
+        ================================<br>
+        같은 페이지 내에서 명시된 id를 가지고 있는 요소를 연결함 <br>
+        <strong>href="#header"</strong><br><br>
+        <button><a href="#header">문제로</a></button><br>
+        ================================<br>
+        <br>
+        <br>
+        <br>
+        ================================<br>
+        같은 페이지 내에서 명시된 id를 가지고 있는 요소를 연결함 <br>
+        원하는 곳으로 이동하기<br>
+        <strong>href="#second"</strong><br><br>
+        <button><a href="#second">맨위로</a></button><br>
         ================================<br>
         <br>
         <br>
@@ -130,6 +146,7 @@
         <br>
         🎈🎈🎈<strong>Qz.1</strong>🎈🎈🎈<br>
         '문제(이동해보기)'로 이동해보기<br>
+        자바스크립트를 사용하기<br>
         <input type="button" value="문제" onclick="click_Qz()" ><br><br>
         window.scrollTo({ ?<b>:</b>?,behavior: '?'});<br>
         ================================<br>
